@@ -4,7 +4,8 @@ export default class FirstLWC extends LightningElement {
     firstName = '';
     lastName = '';
     areDetailsVisible = false;
-
+//Updating
+    //Updating2
     handleChange(event) {
         const field = event.target.name;
         if (field === 'firstName') {
