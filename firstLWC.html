@@ -1,34 +1,22 @@
 <template>
-  <lightning-card>
-    <div class="slds-m-around_medium">
-      <lightning-input
-        name="firstName"
-        label="First Name"
-        onchange="{handleChange}"
-      ></lightning-input>
-      <lightning-input
-        name="lastName"
-        label="Last Name"
-        onchange="{handleChange}"
-      ></lightning-input>
-      <p class="slds-m-top_medium">
-        Full Name in Upper case : {upperCasedFullName}
-      </p>
-    </div>
-  </lightning-card>
+	<lightning-card>
+		<div class="slds-m-around_medium">
+			<lightning-input name="firstName" label="First Name" onchange="{handleChange}"></lightning-input>
+			<lightning-input name="lastName" label="Last Name" onchange="{handleChange}"></lightning-input>
+			<p class="slds-m-top_medium">
+				Full Name in Upper case : {upperCasedFullName} This is edit
+			</p>
+		</div>
+	</lightning-card>
 
-  <lightning-card title="firstLWC" icon-name="custom:custom14">
-    <div class="slds-m-around_medium">
-      <lightning-input
-        type="checkbox"
-        label="Show Details"
-        onchange="{handleChange}"
-      ></lightning-input>
-      <template if:true="{areDetailsVisible}">
-        <div class="slds-m-vertical_medium">
-          These are the Details! this is remote
-        </div>
-      </template>
-    </div>
-  </lightning-card>
+	<lightning-card title="firstLWC" icon-name="custom:custom14">
+		<div class="slds-m-around_medium">
+			<lightning-input type="checkbox" label="Show Details" onchange="{handleChange}"></lightning-input>
+			<template if:true="{areDetailsVisible}">
+				<div class="slds-m-vertical_medium">
+					These are the Details! this is remote PR getting created
+				</div>
+			</template>
+		</div>
+	</lightning-card>
 </template>
